@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Content03 extends Component {
+class Content03_Education extends Component {
     render() {
         return (
             <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -33,4 +33,4 @@ class Content03 extends Component {
     }
 }
 
-export default Content03;
+export default Content03_Education;

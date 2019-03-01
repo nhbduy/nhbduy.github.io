@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Content06 extends Component {
+class Content06_Certifications extends Component {
     render() {
         return (
             <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
@@ -40,4 +40,4 @@ class Content06 extends Component {
     }
 }
 
-export default Content06;
+export default Content06_Certifications;

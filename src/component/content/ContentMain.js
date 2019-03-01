@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import Content01 from './Content01.js';
-import Content02 from './Content02.js';
-import Content03 from './Content03.js';
-import Content04 from './Content04.js';
-import Content05 from './Content05.js';
-import Content06 from './Content06.js';
+import Content01_Header from './Content01_Header.js';
+import Content02_Experience from './Content02_Experience.js';
+import Content03_Education from './Content03_Education.js';
+import Content04_Skills from './Content04_Skills.js';
+import Content05_Interests from './Content05_Interests.js';
+import Content06_Certifications from './Content06_Certifications.js';
 
 class ContentMain extends Component {
     render() {
         return (
             <div className="container-fluid p-0">
-                <Content01 id="about" firstName="Duy" lastName="NGUYEN" />
+                <Content01_Header id="about" firstName="Duy" lastName="NGUYEN" />
                 <hr className="m-0" />
-                <Content02/>
+                <Content02_Experience/>
                 <hr className="m-0" />
-                <Content03/>
+                <Content03_Education/>
                 <hr className="m-0" />
-                <Content04/>
+                <Content04_Skills/>
                 <hr className="m-0" />
-                <Content05/>
+                <Content05_Interests/>
                 <hr className="m-0" />
-                <Content06/>
+                <Content06_Certifications/>
             </div>
         );
     }

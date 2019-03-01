@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Content01 extends Component {
+class Content01_Header extends Component {
     constructor(props) {
         super(props);
         
@@ -36,4 +36,4 @@ class Content01 extends Component {
     }
 }
 
-export default Content01;
+export default Content01_Header;
