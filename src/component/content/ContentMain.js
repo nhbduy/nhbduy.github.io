@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import Content01_Header from './Content01_Header.js';
-import Content02_Experience from './Content02_Experience.js';
-import Content03_Education from './Content03_Education.js';
-import Content04_Skills from './Content04_Skills.js';
-import Content05_Interests from './Content05_Interests.js';
-import Content06_Certifications from './Content06_Certifications.js';
+import Content01Header from './Content01_Header.js';
+import Content02Experience from './Content02_Experience.js';
+import Content03Education from './Content03_Education.js';
+import Content04Skills from './Content04_Skills.js';
+import Content05Interests from './Content05_Interests.js';
+import Content06Certifications from './Content06_Certifications.js';
 
 class ContentMain extends Component {
     render() {
         return (
             <div className="container-fluid p-0">
-                <Content01_Header id="about" firstName="Duy" lastName="NGUYEN" />
+                <Content01Header id="about" />
                 <hr className="m-0" />
-                <Content02_Experience/>
+                <Content02Experience id="experience" />
                 <hr className="m-0" />
-                <Content03_Education/>
+                <Content03Education id="education" />
                 <hr className="m-0" />
-                <Content04_Skills/>
+                <Content04Skills id="skills" />
                 <hr className="m-0" />
-                <Content05_Interests/>
+                <Content05Interests id="interests" />
                 <hr className="m-0" />
-                <Content06_Certifications/>
+                <Content06Certifications id="awards" />
             </div>
         );
     }
