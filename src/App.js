@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className="_Resume">
-        <Menu/>
-        <ContentMain/>
+        <Menu />
+        <ContentMain />
       </div>
     );
   }
