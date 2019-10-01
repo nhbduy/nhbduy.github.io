@@ -1,13 +1,48 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+const toggleActiveLink = () => {
+  // Get the container element
+  const btnContainer = document.getElementById('navbarSupportedContent');
+
+  // Get all buttons with class="btn" inside the container
+  const links = btnContainer.getElementsByClassName('nav-link');
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function() {
+      const current = document.getElementsByClassName('active');
+      current[0].className = current[0].className.replace(' active', '');
+      this.className += ' active';
+    });
+  }
+};
+
+const setActivePageTop = () => {
+  const profile = document.getElementById('navbar-brand');
+  profile.addEventListener('click', function() {
+    const current = document.getElementsByClassName('active');
+    current[0].className = current[0].className.replace(' active', '');
+    const about = document.getElementsByClassName('nav-link')[0];
+    about.className += ' active';
+  });
+};
+
 class Menu extends Component {
+  componentDidMount() {
+    toggleActiveLink();
+    setActivePageTop();
+  }
+
   render() {
     return (
       <nav
         className='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'
         id='sideNav'>
-        <a className='navbar-brand js-scroll-trigger' href='#page-top'>
+        <a
+          id='navbar-brand'
+          className='navbar-brand js-scroll-trigger'
+          href='#page-top'>
           <span className='d-block d-lg-none'>{this.props.title}</span>
           <span className='d-none d-lg-block'>
             <img
@@ -30,7 +65,7 @@ class Menu extends Component {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav'>
             <li className='nav-item'>
-              <a className='nav-link js-scroll-trigger' href='#about'>
+              <a className='nav-link js-scroll-trigger active' href='#about'>
                 {this.props.menuTitles[0]}
               </a>
             </li>
@@ -54,11 +89,11 @@ class Menu extends Component {
                 {this.props.menuTitles[4]}
               </a>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <a className='nav-link js-scroll-trigger' href='#awards'>
                 {this.props.menuTitles[5]}
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

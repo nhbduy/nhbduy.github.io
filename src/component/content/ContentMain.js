@@ -9,18 +9,18 @@ import Content06Certifications from './Content06_Certifications.js';
 class ContentMain extends Component {
   render() {
     return (
-      <div className="container-fluid p-0">
-        <Content01Header id="about" />
-        <hr className="m-0" />
-        <Content02Experience id="experience" />
-        <hr className="m-0" />
-        <Content03Education id="education" />
-        <hr className="m-0" />
-        <Content04Skills id="skills" />
-        <hr className="m-0" />
-        <Content05Interests id="interests" />
-        <hr className="m-0" />
-        <Content06Certifications id="awards" />
+      <div className='container-fluid p-0'>
+        <Content01Header id='about' />
+        <hr className='m-0' />
+        <Content02Experience id='experience' />
+        <hr className='m-0' />
+        <Content03Education id='education' />
+        <hr className='m-0' />
+        <Content04Skills id='skills' />
+        <hr className='m-0' />
+        <Content05Interests id='interests' />
+        <hr className='m-0' />
+        {/* <Content06Certifications id="awards" /> */}
       </div>
     );
   }
