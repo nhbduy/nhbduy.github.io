@@ -25,3 +25,7 @@ html {
 p {
   text-align: justify;
 }
+
+button, button:focus {
+  /* outline: none; */
+}

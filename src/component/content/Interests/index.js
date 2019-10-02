@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Content05_Interests extends Component {
+class Interests extends Component {
   render() {
     return (
       <section
@@ -26,4 +26,4 @@ class Content05_Interests extends Component {
   }
 }
 
-export default Content05_Interests;
+export default Interests;

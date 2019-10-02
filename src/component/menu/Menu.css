@@ -1,0 +1,11 @@
+.navbar-collapse.collapse {
+  /* -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); */
+  /* height: 0; */
+}
+
+.navbar-collapse:not(.collapse) {
+  /* max-height: auto; */
+  /* height: auto; */
+  /* transition: height 0.3s; */
+}

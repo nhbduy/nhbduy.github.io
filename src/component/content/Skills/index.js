@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Content04_Skills extends Component {
+class Skills extends Component {
   render() {
     return (
       <section
@@ -74,4 +74,4 @@ class Content04_Skills extends Component {
   }
 }
 
-export default Content04_Skills;
+export default Skills;

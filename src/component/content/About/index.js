@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
+import data from './data';
 
 const SPACE_DOM = <span>&nbsp;</span>;
 
-class Content01_Header extends Component {
+class About extends Component {
   render() {
     const {
-      id,
       firstName,
       lastName,
       address,
@@ -16,10 +16,10 @@ class Content01_Header extends Component {
       descr02,
       descr03,
       profiles: { github, stackoverflow, linkedin, twitter }
-    } = this.props;
+    } = data;
 
     return (
-      <section className='resume-section p-3 p-lg-5 d-flex d-column' id={id}>
+      <section className='resume-section p-3 p-lg-5 d-flex d-column' id='about'>
         <div className='my-auto'>
           <h1 className='mb-0'>
             {firstName}
@@ -56,35 +56,4 @@ class Content01_Header extends Component {
   }
 }
 
-Content01_Header.defaultProps = {
-  firstName: 'Hoang-Bao-Duy',
-  lastName: 'NGUYEN',
-  address: 'HCMC, Vietnam',
-  phone: '(+84) 969 543 105',
-  email: 'duy3105@gmail.com',
-  descr01:
-    'I have many interests in web, mobile and the Internet of Things (IoT) field.',
-  descr02:
-    'I always learn new skills and new technologies which are attractive to me, especially the Internet, the World Wide Web and the Multimedia.',
-  descr03:
-    'My professional experiences includes web development and some small scale mobile application developement.',
-  profiles: {
-    github: 'https://github.com/nhbduy',
-    stackoverflow: 'https://stackoverflow.com/users/5666489/nhbduy',
-    linkedin: 'https://www.linkedin.com/in/nhbduy',
-    twitter: 'https://twitter.com/nhbduy75'
-  }
-};
-
-Content01_Header.propTypes = {
-  firstName: PropTypes.string.isRequired,
-  lastName: PropTypes.string.isRequired,
-  address: PropTypes.string,
-  phone: PropTypes.string,
-  email: PropTypes.string,
-  descr01: PropTypes.string,
-  descr02: PropTypes.string,
-  descr03: PropTypes.string
-};
-
-export default Content01_Header;
+export default About;
