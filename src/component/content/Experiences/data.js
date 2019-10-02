@@ -59,7 +59,7 @@ export default [
         technology: `JAVA, Oracle, Javascript/Jquery, HTML, CSS, Git`,
         responsibilities: [
           `Writing a Web Development Framework in Java`,
-          `Writing a Web responsive ERP (desktop, mobile, tablet) to manage the sales / invoice, food traceability, flight tracking and the repository of articles`,
+          `Writing a Web responsive ERP (desktop, mobile, tablet) to manage the sales/invoices, food traceability, flight tracking and the repository of articles`,
           `Design and realization of Batch processes with Spring Batch 2.13 and Spring 3.0.4`,
           `Writing PayPal Payment API`,
           `Quality control of J2EE sources (Maven, Sonar, SVN, Nexus, Hudson)`,

@@ -1,34 +1,30 @@
 import React, { Component } from 'react';
 
+import { throttleFunc } from '../../functions';
 import data from './data';
 
 import './Menu.css';
 
-const cn = require('classnames');
+// const toggleActiveLink = () => {
+//   // Get all buttons with class="btn" inside the container
+//   const links = document.querySelectorAll('.nav-link');
 
-const toggleActiveLink = () => {
-  // Get the container element
-  const btnContainer = document.getElementById('navbarSupportedContent');
-
-  // Get all buttons with class="btn" inside the container
-  const links = btnContainer.getElementsByClassName('nav-link');
-
-  // Loop through the buttons and add the active class to the current/clicked button
-  for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', function() {
-      const current = document.getElementsByClassName('active');
-      current[0].className = current[0].className.replace(' active', '');
-      this.className += ' active';
-    });
-  }
-};
+//   // Loop through the buttons and add the active class to the current/clicked button
+//   for (let i = 0; i < links.length; i++) {
+//     links[i].addEventListener('click', function() {
+//       const current = document.getElementsByClassName('active');
+//       current[0].className = current[0].className.replace(' active', '');
+//       this.className += ' active';
+//     });
+//   }
+// };
 
 const setActivePageTop = () => {
   const profile = document.getElementById('navbar-brand');
   profile.addEventListener('click', function() {
     const current = document.getElementsByClassName('active');
     current[0].className = current[0].className.replace(' active', '');
-    const about = document.getElementsByClassName('nav-link')[0];
+    const about = document.querySelectorAll('.nav-link')[0];
     about.className += ' active';
   });
 };
@@ -38,10 +34,38 @@ const toggleMenu = () => {
   menu.classList.toggle('collapse');
 };
 
+const setActiveMenuWhenScrolling = () => {
+  const links = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section');
+
+  // function detectScrollDirection() {
+  //   let lastScrollTop = 0;
+  //   const st = window.pageYOffset || document.documentElement.scrollTop;
+  //   if (st > lastScrollTop) {
+  //     // downscroll code
+  //   } else {
+  //     // upscroll code
+  //   }
+  //   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  // }
+
+  function changeLinkState() {
+    let index = sections.length;
+    while (--index && window.scrollY < sections[index].offsetTop) {}
+    links.forEach(link => link.classList.remove('active'));
+    links[index].classList.add('active');
+  }
+  // // run first time to set active the first menu
+  changeLinkState();
+
+  window.addEventListener('scroll', throttleFunc(changeLinkState, 100));
+};
+
 class Menu extends Component {
   componentDidMount() {
-    toggleActiveLink();
+    // toggleActiveLink();
     setActivePageTop();
+    setActiveMenuWhenScrolling();
   }
 
   render() {
@@ -75,14 +99,9 @@ class Menu extends Component {
         </button>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav'>
-            {data.list.map((item, index) => (
+            {data.list.map(item => (
               <li key={item.name} className='nav-item'>
-                <a
-                  className={cn([
-                    'nav-link js-scroll-trigger',
-                    index === 0 ? ' active' : ''
-                  ])}
-                  href={item.href}>
+                <a className='nav-link js-scroll-trigger' href={item.href}>
                   {item.name}
                 </a>
               </li>

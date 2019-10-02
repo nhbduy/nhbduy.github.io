@@ -27,22 +27,25 @@ class Experiences extends Component {
                   <span className='text-primary'>{item.timeline}</span>
                 </div>
               </div>
-              <div className='resume-item d-flex flex-column flex-md-row'>
-                {item.projects.map(p => (
-                  <div key={p.name}>
-                    <p>{p.name}</p>
-                    <p>{p.description}</p>
-                    <code>{p.technology}</code>
-                    <ul className='pt-3 pl-3 pr-3'>
-                      {p.responsibilities.map(r => (
-                        <li key={r}>
-                          {r}
-                        </li>
-                      ))}
-                    </ul>
+              {item.projects.map(p => (
+                <div key={p.name}>
+                  <hr className='experiences' />
+                  <div className='resume-item d-flex flex-column flex-md-row'>
+                    <div>
+                      <h4>{p.name}</h4>
+                      <p><i>{p.description}</i></p>
+                      <code>
+                        <i>{p.technology}</i>
+                      </code>
+                      <ul className='pt-3 pl-3 pr-3'>
+                        {p.responsibilities.map(r => (
+                          <li key={r}><p>{r}</p></li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           ))}
         </div>
