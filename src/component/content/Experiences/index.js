@@ -33,7 +33,7 @@ class Experiences extends Component {
                     <p>{p.name}</p>
                     <p>{p.description}</p>
                     <code>{p.technology}</code>
-                    <ul className='p-0 pt-3'>
+                    <ul className='pt-3 pl-3 pr-3'>
                       {p.responsibilities.map(r => (
                         <li key={r}>
                           {r}
