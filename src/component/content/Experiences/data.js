@@ -17,7 +17,19 @@ export default [
           `Ensured the technical feasibility and optimum functioning of design features that accelerated load-time and improved site stickiness`
         ],
         timeline: null,
-        ref: `https://twohearts.app/calendars`
+        ref: `https://twohearts.app/calendars`,
+        images: [
+          {
+            id: 1,
+            caption: '01',
+            link: 'img/experiences/twohearts_calendar/01.png'
+          },
+          {
+            id: 2,
+            caption: '02',
+            link: 'img/experiences/twohearts_calendar/02.png'
+          }
+        ]
       }
     ]
   },
@@ -40,7 +52,34 @@ export default [
           `Efforts were key to a 30 % increase in eCommerce sales`
         ],
         timeline: null,
-        ref: `https://wygo.club`
+        ref: `https://wygo.club`,
+        images: [
+          {
+            id: 1,
+            caption: '01 Home',
+            link: 'img/experiences/wygo_club/01.png'
+          },
+          {
+            id: 2,
+            caption: '02 Area List',
+            link: 'img/experiences/wygo_club/02.png'
+          },
+          {
+            id: 3,
+            caption: '03 Plan Detail',
+            link: 'img/experiences/wygo_club/03.png'
+          },
+          {
+            id: 4,
+            caption: '04 Dashboard Add Plan',
+            link: 'img/experiences/wygo_club/04.png'
+          },
+          {
+            id: 5,
+            caption: '05 Manager Area',
+            link: 'img/experiences/wygo_club/05.png'
+          }
+        ]
       }
     ]
   },

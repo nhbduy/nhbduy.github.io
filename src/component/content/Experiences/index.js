@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import data from './data';
 
+import ImageSlider from '../../plugin/ImageSlider/index';
+
 import './style.css';
 
 const cn = require('classnames');
@@ -33,17 +35,24 @@ class Experiences extends Component {
                   <div className='resume-item d-flex flex-column flex-md-row'>
                     <div>
                       <h4>{p.name}</h4>
-                      <p><i>{p.description}</i></p>
+                      <p>
+                        <i>{p.description}</i>
+                      </p>
                       <code>
                         <i>{p.technology}</i>
                       </code>
                       <ul className='pt-3 pl-3 pr-3'>
                         {p.responsibilities.map(r => (
-                          <li key={r}><p>{r}</p></li>
+                          <li key={r}>
+                            <p>{r}</p>
+                          </li>
                         ))}
                       </ul>
                     </div>
                   </div>
+                  {p.images && p.images.length && (
+                    <ImageSlider list={p.images} />
+                  )}
                 </div>
               ))}
             </div>
