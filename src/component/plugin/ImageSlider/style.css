@@ -1,0 +1,36 @@
+.aws-sld {
+  --slider-height-percentage: 60%;
+  /* --slider-transition-duration: 500ms; */
+  --organic-arrow-thickness: 4px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 20px;
+  --organic-arrow-color: #0F539E;
+  --control-button-width: 10px;
+  --control-button-height: 10px;
+  --control-button-background: transparent;
+  --control-bullet-color: #0F539E;
+  --control-bullet-active-color: #0F539E;
+  --loader-bar-color: #0F539E;
+  --loader-bar-height: 2px;
+}
+
+.aws-sld__content {
+  background-color: transparent;
+}
+
+.aws-sld img {
+  object-fit: contain;
+}
+
+.aws-sld__controls .aws-sld__prev {
+  left: 2%;
+}
+
+.aws-sld__controls .aws-sld__next {
+  right: 2%;
+}
+
+.aws-sld__bullets button {
+  width: 10px;
+  height: 10px;
+}
