@@ -29,3 +29,8 @@ p {
 button, button:focus {
   /* outline: none; */
 }
+
+.portfolio {
+  color: #FFF;
+  background-image: linear-gradient(to right, #172228, #233239);
+}

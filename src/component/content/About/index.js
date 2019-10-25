@@ -33,6 +33,12 @@ class About extends Component {
             {SPACE_DOM}-{SPACE_DOM}
             <a href='mailto:name@email.com'>{email}</a>
           </div>
+          <p className='mb-5 pt-2 pr-5 pb-2 pr-5 portfolio'>
+            [~/nhbduy/_DEV]$ npm run{SPACE_DOM}
+            <a className='' href='https://nhbduy.github.io/portfolio'>
+              view-my-portfolio
+            </a>|
+          </p>
           <p className='lead'>{descr01}</p>
           <p className='lead'>{descr02}</p>
           <p className='lead mb-5'>{descr03}</p>
