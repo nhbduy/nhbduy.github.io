@@ -15,7 +15,7 @@ class About extends Component {
       descr01,
       descr02,
       descr03,
-      profiles: { github, stackoverflow, codepen, linkedin, twitter }
+      profiles: { portfolio, github, stackoverflow, codepen, linkedin, twitter }
     } = data;
 
     return (
@@ -35,9 +35,10 @@ class About extends Component {
           </div>
           <p className='mb-5 pt-2 pr-5 pb-2 pr-5 portfolio'>
             [~/nhbduy/_DEV]$ npm run{SPACE_DOM}
-            <a className='' href='https://nhbduy.github.io/portfolio'>
+            <a href={portfolio} target='_blank' rel='noopener noreferrer'>
               view-my-portfolio
-            </a>|
+            </a>
+            |
           </p>
           <p className='lead'>{descr01}</p>
           <p className='lead'>{descr02}</p>

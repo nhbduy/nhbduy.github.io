@@ -11,6 +11,7 @@ export default {
   descr03:
     'My professional experiences includes web development and some small scale mobile application developement.',
   profiles: {
+    portfolio: 'https://nhbduy.github.io/portfolio',
     github: 'https://github.com/nhbduy',
     stackoverflow: 'https://stackoverflow.com/users/5666489/nhbduy',
     codepen: 'https://codepen.io/nhbduy',
