@@ -15,7 +15,7 @@ class About extends Component {
       descr01,
       descr02,
       descr03,
-      profiles: { github, stackoverflow, linkedin, twitter }
+      profiles: { github, stackoverflow, codepen, linkedin, twitter }
     } = data;
 
     return (
@@ -42,6 +42,9 @@ class About extends Component {
             </a>
             <a href={stackoverflow} target='_blank' rel='noopener noreferrer'>
               <i className='fab fa-stack-overflow' />
+            </a>
+            <a href={codepen} target='_blank' rel='noopener noreferrer'>
+              <i class='fab fa-codepen'></i>
             </a>
             <a href={linkedin} target='_blank' rel='noopener noreferrer'>
               <i className='fab fa-linkedin-in' />

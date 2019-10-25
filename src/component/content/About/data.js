@@ -13,6 +13,7 @@ export default {
   profiles: {
     github: 'https://github.com/nhbduy',
     stackoverflow: 'https://stackoverflow.com/users/5666489/nhbduy',
+    codepen: 'https://codepen.io/nhbduy',
     linkedin: 'https://www.linkedin.com/in/nhbduy',
     twitter: 'https://twitter.com/nhbduy75'
   }
