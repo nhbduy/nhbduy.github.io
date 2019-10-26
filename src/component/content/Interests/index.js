@@ -9,7 +9,7 @@ class Interests extends Component {
         <div className="my-auto">
           <h2 className="mb-5">Interests</h2>
           <p>
-            Technologies, reading, traveling, cycling
+            Technologies 👨💻, reading 📖, traveling ✈️, cycling 🚴
           </p>
         </div>
       </section>
