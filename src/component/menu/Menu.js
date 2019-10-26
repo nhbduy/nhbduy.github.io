@@ -51,7 +51,7 @@ const setActiveMenuWhenScrolling = () => {
 
   function changeLinkState() {
     let index = sections.length;
-    while (--index && window.scrollY < sections[index].offsetTop) {}
+    while (--index && window.scrollY < sections[index].offsetTop - 50) {}
     links.forEach(link => link.classList.remove('active'));
     links[index].classList.add('active');
   }
