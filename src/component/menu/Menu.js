@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 
 import { throttleFunc } from '../../functions';
 import data from './data';
@@ -61,56 +61,54 @@ const setActiveMenuWhenScrolling = () => {
   window.addEventListener('scroll', throttleFunc(changeLinkState, 100));
 };
 
-class Menu extends Component {
-  componentDidMount() {
+const Menu = () => {
+  useEffect(() => {
     // toggleActiveLink();
     setActivePageTop();
     setActiveMenuWhenScrolling();
-  }
+  }, []);
 
-  render() {
-    return (
-      <nav
-        className='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'
-        id='sideNav'>
-        <a
-          id='navbar-brand'
-          className='navbar-brand js-scroll-trigger'
-          href='#page-top'>
-          <span className='d-block d-lg-none'>{data.title}</span>
-          <span className='d-none d-lg-block'>
-            <img
-              className='img-fluid img-profile rounded-circle mx-auto mb-2'
-              src='img/profile.jpeg'
-              alt='profile'
-            />
-          </span>
-        </a>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-toggle='collapse'
-          data-target='#navbarSupportedContent'
-          aria-controls='navbarSupportedContent'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-          onClick={() => toggleMenu()}>
-          <span className='navbar-toggler-icon' />
-        </button>
-        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-          <ul className='navbar-nav'>
-            {data.list.map(item => (
-              <li key={item.name} className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href={item.href}>
-                  {item.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </nav>
-    );
-  }
-}
+  return (
+    <nav
+      className='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'
+      id='sideNav'>
+      <a
+        id='navbar-brand'
+        className='navbar-brand js-scroll-trigger'
+        href='#page-top'>
+        <span className='d-block d-lg-none'>{data.title}</span>
+        <span className='d-none d-lg-block'>
+          <img
+            className='img-fluid img-profile rounded-circle mx-auto mb-2'
+            src='img/profile.jpeg'
+            alt='profile'
+          />
+        </span>
+      </a>
+      <button
+        className='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarSupportedContent'
+        aria-controls='navbarSupportedContent'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+        onClick={() => toggleMenu()}>
+        <span className='navbar-toggler-icon' />
+      </button>
+      <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+        <ul className='navbar-nav'>
+          {data.list.map(item => (
+            <li key={item.name} className='nav-item'>
+              <a className='nav-link js-scroll-trigger' href={item.href}>
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default Menu;
