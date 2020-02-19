@@ -1,9 +1,47 @@
 export default [
   {
     id: 1,
+    title: `Frontend Web Developer (Remote)`,
+    company: `ICW Hong Kong`,
+    timeline: `12/2019 - Present`,
+    location: `Ho Chi Minh City, Vietnam`,
+    description: null,
+    ref: `https://icw.io`,
+    projects: [
+      {
+        name: `CQM platform`,
+        description: `Patented Software for Compliance Information & Workflow Management`,
+        technology: `NodeJS, ReactJS, Redux, PostgreSQL, Material-UI, Webpack, Git`,
+        responsibilities: [
+          `Charge front-end development and work with backend programming for Supplier, Inspection and Message module`
+        ],
+        timeline: null,
+        ref: `https://www.icw.io/cqm`,
+        images: [
+          {
+            id: 1,
+            caption: '01',
+            link: 'img/experiences/icw_cqm/01.png'
+          },
+          {
+            id: 2,
+            caption: '02',
+            link: 'img/experiences/icw_cqm/02.png'
+          },
+          {
+            id: 3,
+            caption: '03',
+            link: 'img/experiences/icw_cqm/03.png'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
     title: `Full Stack Web Developer`,
     company: `CHRISTINA’S`,
-    timeline: `03/2019 - Present`,
+    timeline: `03/2019 - 10/2019`,
     location: `Ho Chi Minh City, Vietnam`,
     description: null,
     ref: `https://christinas.vn`,
@@ -34,7 +72,7 @@ export default [
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: `Techincal Project Lead`,
     company: `HUNGVIET-SOLUTION`,
     timeline: `07/2018 - 01/2019`,
@@ -84,7 +122,7 @@ export default [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: `Full Stack Web Developer`,
     company: `H&V-TECH`,
     timeline: `03/2016 - 06/2018`,
@@ -110,7 +148,7 @@ export default [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: `Production Engineer`,
     company: `CAPITALDATA`,
     timeline: `06/2015 - 08/2015`,
