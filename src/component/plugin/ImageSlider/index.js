@@ -19,7 +19,7 @@ const ImageSlider = ({ list = [] }) => {
     <Suspense fallback={<div>Loading...</div>}>
       <AwesomeSlider
         bullets={false}
-        transitionDelay={100}
+        transitionDelay={50}
         // startupScreen={startupScreen}
         cssModule={AwesomeSliderStyles}>
         {list.map(item => (
