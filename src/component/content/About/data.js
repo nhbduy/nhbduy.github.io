@@ -12,13 +12,17 @@ export default {
   profiles: {
     portfolio: 'https://nhbduy-portfolio.netlify.com',
     accounts: [
-      { name: 'linkedin-in', url: 'https://www.linkedin.com/in/nhbduy' },
-      { name: 'github', url: 'https://github.com/nhbduy' },
-      { name: 'stack-overflow', url: 'https://stackoverflow.com/users/5666489/nhbduy' },
-      { name: 'code', url: 'https://leetcode.com/nhbduy' },
-      { name: 'free-code-camp', url: 'https://www.freecodecamp.org/nhbduy' },
-      { name: 'codepen', url: 'https://codepen.io/nhbduy' },
-      { name: 'twitter', url: 'https://twitter.com/nhbduy75' },
+      { type: 'fab', name: 'linkedin-in', url: 'https://www.linkedin.com/in/nhbduy' },
+      { type: 'fab', name: 'github', url: 'https://github.com/nhbduy' },
+      {
+        type: 'fab',
+        name: 'stack-overflow',
+        url: 'https://stackoverflow.com/users/5666489/nhbduy',
+      },
+      { type: 'fas', name: 'code', url: 'https://leetcode.com/nhbduy' },
+      { type: 'fab', name: 'free-code-camp', url: 'https://www.freecodecamp.org/nhbduy' },
+      { type: 'fab', name: 'codepen', url: 'https://codepen.io/nhbduy' },
+      { type: 'fab', name: 'twitter', url: 'https://twitter.com/nhbduy75' },
     ],
   },
 };

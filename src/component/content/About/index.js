@@ -1,8 +1,13 @@
 import React from 'react';
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import data from './data';
 
 const SPACE_DOM = <span>&nbsp;</span>;
+
+library.add(fas, fab);
 
 const About = () => {
   const {
@@ -43,9 +48,10 @@ const About = () => {
         <p className='lead'>{descr02}</p>
         <p className='lead mb-5'>{descr03}</p>
         <div className='social-icons'>
-          {accounts.map(({ name, url }, index) => (
+          {accounts.map(({ type, name, url }, index) => (
             <a key={index} href={url} target='_blank' rel='noopener noreferrer'>
-              <i className={`fab fa-${name}`} />
+              {/* <i className={`fab fa-${name}`} /> */}
+              <FontAwesomeIcon icon={[type, name]} />
             </a>
           ))}
         </div>
