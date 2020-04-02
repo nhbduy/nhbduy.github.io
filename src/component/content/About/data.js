@@ -10,7 +10,7 @@ export default {
   descr03:
     'My professional experiences includes web development and some small scale mobile application developement.',
   profiles: {
-    portfolio: 'https://nhduy-portfolio.netlify.com',
+    portfolio: 'https://nhbduy-portfolio.netlify.com',
     accounts: [
       { name: 'linkedin-in', url: 'https://www.linkedin.com/in/nhbduy' },
       { name: 'github', url: 'https://github.com/nhbduy' },
