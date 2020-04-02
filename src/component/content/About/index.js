@@ -14,7 +14,7 @@ const About = () => {
     descr01,
     descr02,
     descr03,
-    profiles: { portfolio, github, stackoverflow, codepen, linkedin, twitter }
+    profiles: { portfolio, accounts = [] },
   } = data;
 
   return (
@@ -43,21 +43,11 @@ const About = () => {
         <p className='lead'>{descr02}</p>
         <p className='lead mb-5'>{descr03}</p>
         <div className='social-icons'>
-          <a href={github} target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-github' />
-          </a>
-          <a href={stackoverflow} target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-stack-overflow' />
-          </a>
-          <a href={codepen} target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-codepen'></i>
-          </a>
-          <a href={linkedin} target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-linkedin-in' />
-          </a>
-          <a href={twitter} target='_blank' rel='noopener noreferrer'>
-            <i className='fab fa-twitter' />
-          </a>
+          {accounts.map(({ name, url }, index) => (
+            <a key={index} href={url} target='_blank' rel='noopener noreferrer'>
+              <i className={`fab fa-${name}`} />
+            </a>
+          ))}
         </div>
       </div>
     </section>
