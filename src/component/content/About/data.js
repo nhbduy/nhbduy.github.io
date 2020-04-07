@@ -4,11 +4,12 @@ export default {
   address: 'HCMC, Vietnam',
   phone: '(+84) 969 543 105',
   email: 'duy3105@gmail.com',
-  descr01: 'I have many interests in web, mobile and the Internet of Things (IoT) field.',
+  descr01:
+    'I realize that the IT industry is immense and rapidly changes days by days. Hence, I need to adapt to it by learning new technologies and enhancing my skills every day.',
   descr02:
-    'I always learn new skills and new technologies which are attractive to me, especially the Internet, the World Wide Web and the Multimedia.',
+    'As an experienced web developer, I have learned how to be responsible for not only myself but also my team. This has been an opportunity for me to become a dexterous developer, furthermore a better technical leader.',
   descr03:
-    'My professional experiences includes web development and some small scale mobile application developement.',
+    'With extensive experience in web development and some small scale mobile application development, I’m sure that I can meet the client’s needs beyond expectation.',
   profiles: {
     portfolio: 'https://nhbduy-portfolio.netlify.com',
     accounts: [
