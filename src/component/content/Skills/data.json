@@ -1,0 +1,27 @@
+{
+  "skills": [
+    { "title": "HTML5", "type": "fab", "name": "html5" },
+    { "title": "CSS3", "type": "fab", "name": "css3-alt" },
+    { "title": "Javascript", "type": "fab", "name": "js-square" },
+    { "title": "Node JS", "type": "fab", "name": "node" },
+    { "title": "React JS", "type": "fab", "name": "react" },
+    { "title": "Bootstrap", "type": "fab", "name": "bootstrap" },
+    { "title": "SASS", "type": "fab", "name": "sass" },
+    { "title": "Node Package Manager", "type": "fab", "name": "npm" },
+    { "title": "Git", "type": "fab", "name": "git" },
+    { "title": "Docker", "type": "fab", "name": "docker" },
+    { "title": "Figma", "type": "fab", "name": "figma" },
+    { "title": "Slack", "type": "fab", "name": "slack" },
+    { "title": "Trello", "type": "fab", "name": "trello" },
+    { "title": "Windows", "type": "fab", "name": "windows" },
+    { "title": "Mac", "type": "fab", "name": "apple" },
+    { "title": "Linux", "type": "fab", "name": "linux" }
+  ],
+  "workflow": [
+    { "content": "Mobile-First, Responsive Design" },
+    { "content": "Cross Browser Testing & Debugging" },
+    { "content": "Optimization (Code Splitting, Tree Shaking, PWA)" },
+    { "content": "Cross Functional Teams" },
+    { "content": "Agile Development & Scrum" }
+  ]
+}
